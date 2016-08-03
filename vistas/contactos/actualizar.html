@@ -1,9 +1,9 @@
 
 <div class="ed-container">
     <div class="ed-item">
-    <form action="#" method="POST">
+    <form action="#" method="POST" id="frmActualizar">
             <fieldset>
-                <legend>Crear contacto</legend>
+                <legend>Actualizar contacto</legend>
                 
                 <label for="identificador">Identificador</label>
                 <input type="number" name="identificador" id="identificador" disabled>
@@ -21,7 +21,7 @@
 
                 <label >¿Desea recibir informacion?</label>
                 <input type="checkbox" name="recibir" id="recibir"  >
-                <label for="recibir">Si / No</label>
+                <label for="recibir"></label>
 
                 <label >Color preferido</label>
                 <input type="radio" name="color"" id="azul" value="azul"> 
@@ -31,7 +31,7 @@
                 <input type="radio" name="color"" id="verde" value="verde"> 
                 <label for="verde">verde</label>
 
-                <button type="submit" id="btnActualizar">actualizar</button>
+                <button type="submit" id="btnActualizar" onclick="_.getCtrl().actualizar(_.get('frmActualizar'))">actualizar</button>
 
             </fieldset>
         </form>

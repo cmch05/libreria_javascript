@@ -2,7 +2,7 @@
 
 <div class="ed-container">
     <div class="ed-item">
-        <form action="#" method="POST">
+        <form action="#" method="POST" id="crearContacto">
             <fieldset>
                 <legend>Crear contacto</legend>
 
@@ -30,7 +30,7 @@
                 <input type="radio" name="color"" id="verde" value="verde"> 
                 <label for="verde">verde</label>
 
-                <button type="submit" id="btnCrear">Crear</button>
+                <button type="submit" id="btnCrear" onclick="_.getCtrl().crear(_.get('crearContacto'))">Crear</button>
 
             </fieldset>
         </form>
